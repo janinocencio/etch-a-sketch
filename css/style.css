@@ -63,8 +63,8 @@ html {
     height: 500px;
     border-color: black;
     border-style: solid;
+    background: white;
 }
-
 
 .footer {
     height: 10vh;
