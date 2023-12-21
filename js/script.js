@@ -36,3 +36,7 @@ squareButton.addEventListener('click', () => {
 });
 
 const clearButton = document.querySelector('.clear-button')
+clearButton.addEventListener('click', () => {
+    clear();
+    initialize(SQUARESDEFAULT);
+});
