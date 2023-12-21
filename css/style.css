@@ -61,6 +61,7 @@ html {
     margin:auto;
     display:flex;
     flex-wrap:wrap;
+    outline: 2px solid black;
 }
 
 .footer {
