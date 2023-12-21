@@ -19,11 +19,21 @@ function clear() {
     };
 };
 
+function activateHover() {
+    const squareAll = document.querySelectorAll('.grid-container > div');
+    squareAll.forEach((square) => {
+        square.addEventListener('mouseover', () => {
+            square.style.background = 'orange'
+        });
+    });
+};
+
 
 
 const SQUARESDEFAULT = 16
 document.addEventListener('DOMContentLoaded', () => {
     initialize(SQUARESDEFAULT);
+    activateHover();
 });
 
 const squareButton = document.querySelector('.square-number-button');
@@ -34,10 +44,13 @@ squareButton.addEventListener('click', () => {
    } while (+squaresRow > 100 || Number.isNaN(+squaresRow) || squaresRow === "" || squaresRow.includes("."));
    clear(); 
    initialize(squaresRow);
+   activateHover();
 });
 
 const clearButton = document.querySelector('.clear-button')
 clearButton.addEventListener('click', () => {
     clear();
     initialize(SQUARESDEFAULT);
+    activateHover();
 });
+
