@@ -50,20 +50,19 @@ html {
 
 .main {
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     text-align: center;
     background: orange;
 }
 
 .grid-container {
-    width: 500px;
-    height: 500px;
-    border-color: black;
-    border-style: solid;
+    width: 250px;
+    height: 250px;
+    box-sizing: content-box;
+    border: black solid;
     background: white;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .footer {
@@ -71,4 +70,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/** For JS Properties 
+
+.square {
+
 }
