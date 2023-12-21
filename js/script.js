@@ -23,7 +23,8 @@ function activateHover() {
     const squareAll = document.querySelectorAll('.grid-container > div');
     squareAll.forEach((square) => {
         square.addEventListener('mouseover', () => {
-            square.style.background = 'orange'
+            square.style.background = 'orange';
+            square.style.transition = 'background-color 0.25s ease';
         });
     });
 };
