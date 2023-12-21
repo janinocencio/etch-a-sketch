@@ -1,5 +1,5 @@
 function initialize (squaresRow) {
-    for (let i=0; i<squaresRow*squaresRow; i++) { //i must be less than the number of squares
+    for (let i=1; i<=squaresRow*squaresRow; i++) { 
         const gridContainer = document.querySelector('.grid-container');
         const oneSquare = document.createElement('div');
         const oneSquareWidth = (gridContainer.getBoundingClientRect().width / squaresRow);
@@ -7,6 +7,7 @@ function initialize (squaresRow) {
         oneSquare.style.width = oneSquareWidth +"px";
         oneSquare.style.height = oneSquareHeight +"px";
         oneSquare.style.border = '1px dotted orange';
+        oneSquare.classList.add('div'+i);
         gridContainer.appendChild(oneSquare);
     };    
 }
