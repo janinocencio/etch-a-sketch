@@ -31,9 +31,9 @@ function activateHover() {
 
 
 
-const SQUARESDEFAULT = 16
+let squaresRowCurrent = 16 //default setting
 document.addEventListener('DOMContentLoaded', () => {
-    initialize(SQUARESDEFAULT);
+    initialize(squaresRowCurrent);
     activateHover();
 });
 
@@ -46,12 +46,13 @@ squareButton.addEventListener('click', () => {
    clear(); 
    initialize(squaresRow);
    activateHover();
+   squaresRowCurrent = squaresRow;
 });
 
 const clearButton = document.querySelector('.clear-button')
 clearButton.addEventListener('click', () => {
     clear();
-    initialize(SQUARESDEFAULT);
+    initialize(squaresRowCurrent);
     activateHover();
 });
 
