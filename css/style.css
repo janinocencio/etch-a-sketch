@@ -31,12 +31,12 @@
   /**************************/
 
 html {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -47,21 +47,33 @@ html {
     justify-content: center;
 }
 
-
 .main {
     height: 80vh;
     text-align: center;
     background: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .grid-container {   
     width: 256px;
     height: 256px;    
     background: white;
-    margin:auto;
     display:flex;
     flex-wrap:wrap;
-    outline: 2px solid black;
+    outline: 3px inset black;
+}
+
+.settings-container > button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.settings-container > button:hover {
+  background-color: orange;
+  transition: 0.25s;
 }
 
 .footer {
